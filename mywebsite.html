@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Irene Dagher's Website</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Web Client Language Website"/>
+    <meta name="author" content="Irene Dagher"/>
+
+     <!-- Future link to my future CSS page -->
+    <link rel="stylesheet" type="text/css" href="mywebsiste.css">
+    <!--Link for fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Stying only to create a border-->
+    <style>
+        
+        .right-float {
+      float: right;
+             }
+
+             col {
+            width: 20%;
+                }
+        
+      </style>
+
+</head>
+
+
+
+
+<body>
+    
+    <nav>
+        <header>
+            <!--Will turn into a navigation bar or a hamburger menu-->
+       
+        <ul>
+            <li><a href="#CVid"><i>Curriculum Vitae </i></a> </li>
+            <li><a href="#Projectid"><i>Project </a></i>  </li>
+            <li><a href="#Personalityid"> <i>Personality </a></i> </li>
+            <li><a href="#Contactid"><i>Contact</a></i></li>
+            <li><a href="#Experimentsid"><i>Contact</a></i></li>
+
+        </ul>
+    </header>
+    </nav>
+    
+   <main>
+    <h1>Irene Dagher's Personal Portfolio</h1>
+    <p> This is my personal portfolio that contains ......</p>
+    <aside>
+        <p>Scroll down to learn more about me.</p>
+      </aside>
+
+
+
+
+
+
+   </main>
+
+    
+    
+
+   <fieldset>
+   <h2>About Me</h2>
+   <img src="AboutmeIrenePhoto.JPG" alt="Irene Dagher's Picture " width="200" height="260" class="right-float" loading="lazy">
+
+</fieldset>
+     <h2 id="CVid">Curriculum vitae</h2>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+        </script>
+       
+       
+        <div class="bordered-div">
+            <!-- Bordered div is so unecessary i could've used textfield-->
+   
+    
+            <table>
+            <h3>My Education</h3>
+        
+           
+       
+            <tr>
+            <th scope="col"></th> <!-- Empty cell-->
+            <th scope="col">Years</th> <!-- Cellule d'En-tête = table header, th -->
+            <th scope="col">Establishment</th>
+            <th scope="col">Link</th>
+            </tr>
+        
+            <tr>
+                <th scope="row">Titre Ligne 1</th> 
+                <td>2023-2024</td> 
+                <td>International Student at UCSD  - Majoring in Artificial Intelligence</td>
+                <td><a href="https://ucsd.edu/" target="_blank"> UCSD Website</a></td>
+            </tr>
+            <tr>
+                <th scope="row">Titre Ligne 2</th> 
+                    <td>2020-2023</td>
+                    <td>Engineering Student at ESME Paris</td> 
+                    <td><a href="https://www.esme.fr/" target="_blank"> ESME Website</a></td>
+                    
+            </tr>
+
+            <tr>
+                <th scope="row">Titre Ligne 2</th> 
+                    <td>2019-2020</td>
+                    <td>Student at Sainte Famille Francaise Lebanon</td> 
+                    <td><a href="https://www.csff.edu.lb/" target="_blank"> SFF Website</a></td>
+                        
+            </tr>
+                
+            </table>
+
+            <hr>
+            <h3>My Work Experience</h3>
+
+            <section>
+
+            <ol>
+                <li>
+                   <b> Private Tutoring Courses in Mathematics and English with Complétude</b>
+                   <br>
+                    I provide support classes to two students, one of whom is in the third grade.
+                     This demands organization, discipline, and teaches me to be attentive while knowing how to motivate students.
+                    </li>
+                <li>
+                <b>Internship at SoapBox Communications</b>
+                <br>
+                    A public relations agency where I was able to learn the fundamentals of crisis communication in the corporate world.  
+                    
+                    
+                    
+                    </li>
+                
+            <ol>
+            </section>
+            <hr>
+            <h3>My Fluency in Languages</h3>
+     
+    
+
+            <p>French:
+        
+            <svg width="200" height="95" >
+                <circle cx="20" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="50" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="80" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="110" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="140" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+              
+                
+            </svg>
+
+            Excellent knowledge</p>
+
+            <p>Arabic:
+        
+                <svg width="200" height="95" >
+                    <circle cx="20" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="50" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="80" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="110" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="140" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+              
+                  
+                    
+                </svg>
+        
+        
+            Excellent knowledge</p>
+        
+            <p>English:
+        
+                <svg width="200" height="95" >
+                    <circle cx="20" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="50" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="80" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="110" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                <circle cx="140" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+              
+                  
+                    
+                </svg>
+        
+        
+            Excellent knowledge</p>
+
+
+            <p>Spanish:
+        
+                <svg width="200" height="95" >
+                    <circle cx="20" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                    <circle cx="50" cy="80" r="10" stroke="black" stroke-width="2" fill="bLACK" />
+                    <circle cx="80" cy="80" r="10" stroke="black" stroke-width="2" fill="white" />
+                    <circle cx="110" cy="80" r="10" stroke="black" stroke-width="2" fill="white" />
+                    <circle cx="140" cy="80" r="10" stroke="black" stroke-width="2" fill="white" />
+                   
+
+                   
+
+                    
+                </svg>
+               Some notions</p>
+                
+
+        
+
+
+
+            <form>
+                
+                
+                <select id="DownloadSelect">
+                    <optgroup label="Professional documents">
+                    <option value="CV">CV</option>
+                    <option value="Diploma">Diploma</option>
+                    </optgroup>
+                    <optgroup label="Other documents">
+                    <option value="Projects">Projects</option>
+                    <option value="Yes">Whatever</option>
+                    </optgroup>
+                </select>
+                  
+                  <button id="downloadButton">Download</button>
+
+        
+             </form>
+
+             <br>
+             <br>
+            </div> 
+
+
+
+
+
+
+
+    <h2 id="Projectid">Project</h2>
+
+<details>
+  <summary>WineMeUp</summary>
+  <img src="WineMEUp.jpg" alt="Irene Dagher's Picture " width="300" height="260" class="right-float" loading="lazy">
+  <p><strong>WineMeUp</strong> is an application that we did in Android Studio that recommends wine depending on a dish that was given by the user.
+     It was our first approach to Android Studio, GitHub and Firebase</p>
+</details>
+<details>
+    <summary>Sigma</summary>
+    <img src="SIGMA.jpg" alt="Irene Dagher's Picture " width="300" height="260" class="right-float" loading="lazy">
+    <p><strong>SIGMA</strong> is my first approach to C language , it is a two-player game where each gamer has to complete a full column 5 times in a 5 by 5 square containing numbers. 
+        It is inspired by a game that I played younger called Bingo !</p>
+  </details>
+  <details>
+    <summary>MEDME</summary>
+    <img src="MedME.jpg" alt="Irene Dagher's Picture " width="400" height="250" class="right-float" loading="lazy">
+    <p><strong>MEDME</strong> is our first marketing project where the point was to create a service .
+         We came up with an application called MedMe that is similar to UberEats where people can order medecine to their houses directly.
+  </details>
+
+  <details>
+    <summary>HTMLPortfolio</summary>
+    <p><strong>Portfolio</strong> I designed my portfolio using HTML .
+  </details>
+
+
+
+
+
+    <h2 id="Personalityid">Personality</h2>
+    <title>Inline SVG Example</title>
+        <h3>Skills</h3>
+
+<pre>
+Equally <em>effective </em>in group work (as a team leader) as in individual work (autonomous and diligent).
+<em>Methodical</em> and <em>organized </em>in work.
+Shows <em>initiative</em>.
+Persistent.
+<em>Adaptable</em>.
+Committed.
+Engaged.
+Conceptual and <em>analytical</em>.
+</pre>
+
+<h3>Interest</h3>
+<table>
+
+    <colgroup>
+      <col style="background-color: lightgray;">
+      <col span="5">
+    </colgroup>
+    <tr>
+      <td>Co-Creator, Vice President, and Communication Manager of "Ingénieuses" at ESME</td>
+      <td>Volunteer Action</td>
+      <td>Art and Music</td>
+      <td>Cultures and Travelling</td>
+      <td>Running</td>
+    </tr>
+    <tr>
+        <td>An association working for gender equality in engineering schools.
+            Created the Instagram account "ingenieuseesesme," which is followed by more than 500 people. 
+            Created posts and video montages. Addressed topics like harassment and the role of women in the field of engineering.
+             Collaborated with brands to organize contests. Guided ESME to adopt a gender equality-focused policy.
+             <br>
+             <iframe src="https://www.instagram.com/ingenieusesesme/embed/" title="description"></iframe></td>
+        <td >Reforestation, assisting families affected by the Beirut explosion.</td>
+        <td>I really enjoy going to museums and concerts. The best way to get to know new people who have the same interests as you.</td>
+        <td> Cyprus, Germany, Spain, Switzerland, Egypt...</td>
+        <td>Participated in the 10 km race in La Parisienne 
+            in 2022 to support breast cancer research.As well as two 5km races. </td>
+      </tr>
+   
+  </table>
+
+ 
+
+
+
+
+
+
+
+
+
+<h2 id="Experimentsid">Experiments</h2>
+
+<p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+<figure>
+    <img src="AboutmeIrenePhoto.JPG" alt="Me myself and I">
+    <figcaption>Another picture of me because why not.</figcaption>
+  </figure>
+
+
+
+
+
+  
+
+   
+
+    
+   
+    <h2 id="Contactid">Contact</h2>
+    <fieldset>
+    <legend>Feel free to reach out to me using the form below</legend>
+
+    <form name="ContactForm">
+        <!-- For now there is no action and no method in the form-->
+
+        <label>Select what fits you the most : </label>
+        <input type="Persontype" list="options">
+            <datalist id="options">
+                <option value="Recruiter">
+                <option value="Engineer">
+                <option value="Student">
+            </datalist>
+            
+        </form>
+        <br>
+        
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <br>
+
+        <input type="email" id="email" name="email"placeholder="Email" required>
+        <br>
+
+        
+        <textarea id="message" name="message"  placeholder="MESSAGE"rows="4"required > </textarea>
+        <br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+    
+    
+    
+   
+
+
+<footer >
+   
+   
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+
+    </a>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+        
+    <p>Thank you so much for the interest that you have 
+    </p>
+
+
+</footer>   
+</body>
+</html>
