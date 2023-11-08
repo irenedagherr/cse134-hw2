@@ -1,0 +1,389 @@
+/*Those are the variables in CSS*/
+:root {
+    --main-color:#2E4052;
+
+  
+   
+  }
+
+  h1,h2,h3,p{
+    color:#FBFEFB
+  }
+ 
+body{
+    background-color: var(--main-color);
+    font-family:Roboto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /
+
+}
+
+
+.my-image{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  max-width: 50%;
+  max-height: auto; /* 1/3 of the viewport height */
+  height: auto;
+  width: auto;
+ 
+  
+
+}
+
+.right-menu-follow{
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%; 
+  height: 10%; /* Adjust the height as needed */
+ 
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.right-menu-follow,
+.my-image {
+  flex: 1;
+  /* Add other styles as needed */
+}
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1{
+  font-size: 3em;
+}
+h2{
+  font-size: 4em;
+
+}
+
+
+
+
+.first-anim{
+  opacity: 0;
+  transform: translateY(30 px);
+  animation:moveup 0.5s linear forwards;
+
+}
+@keyframes moveup{
+  100%{
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+
+
+.firstpagesection{
+  width:100vw;
+  height:100vh;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  margin-left: 5rem;
+  transition:animation all 2s ease;
+}
+
+.down-arrow {
+  color: beige;
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: 30%;
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+.blink {
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: rgb(184, 184, 204);
+    opacity: 1;
+  }
+}
+
+
+
+
+.upmyclass{
+  display:flex;
+  flex-direction: row;
+}
+
+.secondpagesection,.pagefoursection{
+  background-color:beige;
+  width:100vw;
+  height:100vh;
+  margin-top: 5rem;
+
+  padding-left: 10px;
+  padding-bottom: 150px;
+  padding-top: 30px;
+
+  
+
+}
+
+
+.aboutmebox{
+  width:55vw;
+  margin-top:5rem;
+  background-color:rgb(212, 212, 205);
+  border: 2px;
+  border-color: #188085;
+  border-radius: 10px;
+  padding-left: 10px;
+
+}
+
+summary-design{
+  font-size: 100em;
+
+}
+
+
+
+.horizontal-scroll-wrapper-squares {
+ 
+  flex-direction: row; /* Arrange child elements horizontally */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent content from wrapping to the next line */
+  width: 40%;
+
+}
+
+.part-of-scroller {
+  display: inline-block; /* Display child elements inline to make them scroll horizontally */
+  margin-right: 45px; /* Add spacing between content blocks */
+}
+
+
+
+.pagethreesection{
+  
+  width:100vw;
+  height:100vh;
+  margin-top: 5rem;
+
+  padding-left: 10px;
+  padding-bottom: 150px;
+  padding-top: 30px;
+}
+
+#download-cv-btn{
+  background-color: DodgerBlue;
+  border-radius:20px;
+  border: none;
+  color:beige;
+  padding: 12px 30px;
+  margin:50px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+#download-cv-btn:hover {
+  background-color: rgb(65, 225, 214);
+}
+
+
+table {
+
+  background-color: antiquewhite;
+  width: 60%;
+
+  margin: 20px;
+  border-radius:5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  
+
+}
+
+th,td{
+  padding: 12px 15px;
+}
+tr:hover {
+  border-style: inset;
+  color:var(--main-color);
+  background-color: grey;
+  
+
+}
+tr{
+  margin: 20%;
+  border-bottom: 1px solid #dddddd;
+
+}
+
+tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+
+}
+
+tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+li {
+  margin: 10px 0;
+  padding: 5px; 
+  
+}
+
+
+
+.grid-container {
+
+  display: inline-grid;
+  grid-template-columns: auto auto ;
+  padding: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+
+
+    max-width: 650px; 
+
+   
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    max-width: 200px
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    max-width: 300px}
+
+  
+
+
+
