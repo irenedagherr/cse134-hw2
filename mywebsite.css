@@ -13,6 +13,11 @@
     margin: 0 0 0.25rem 0;
   }
 
+  home-menu{
+    padding-top:10%;
+    padding-bottom: 10%;
+    margin:50px
+  }
 
  
 body{
@@ -261,7 +266,19 @@ h2{
     order: 0;
     max-width: 300px}
 
-  
 
 
+.bottom-logos{
 
+display: inline-block;
+
+margin-right: 20px;
+font-size: 24px;
+text-decoration: none; 
+color: #333;
+padding-left: 50px;
+
+}
+.bottom-logos:hover{
+  transform: scale(1.5)
+}
