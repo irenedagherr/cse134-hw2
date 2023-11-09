@@ -2,17 +2,25 @@
 :root {
     --main-color:#2E4052;
 
-  
    
   }
 
   h1,h2,h3,p{
     color:#FBFEFB
   }
+
+  h2:has(+ a) {
+    margin: 0 0 0.25rem 0;
+  }
+
+
  
 body{
+
     background-color: var(--main-color);
-    font-family:Roboto;
+    background-color: #2E4052;
+    
+    font-family:Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,6 +28,12 @@ body{
     height: 100vh; /
 
 }
+
+a{
+  text-decoration: none;
+  color: beige;
+  }
+
 
 
 .my-image{
@@ -30,10 +44,11 @@ body{
   max-height: auto; /* 1/3 of the viewport height */
   height: auto;
   width: auto;
- 
+  z-index:0;
   
 
 }
+
 
 .right-menu-follow{
   background-color: aliceblue;
@@ -85,15 +100,15 @@ h2{
   }
 }
 
-
 .firstpagesection{
   width:100vw;
   height:100vh;
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-bottom: 20rem;
   margin-left: 5rem;
   transition:animation all 2s ease;
 }
+
 
 .down-arrow {
   color: beige;
@@ -135,6 +150,8 @@ h2{
 
 
 
+
+
 .blink {
   animation: blink 3s infinite;
 }
@@ -155,163 +172,22 @@ h2{
 
 
 
-.upmyclass{
-  display:flex;
-  flex-direction: row;
-}
-
-.secondpagesection,.pagefoursection{
-  background-color:beige;
-  width:100vw;
-  height:100vh;
-  margin-top: 5rem;
-
-  padding-left: 10px;
-  padding-bottom: 150px;
-  padding-top: 30px;
-
-  
-
-}
-
-
-.aboutmebox{
-  width:55vw;
-  margin-top:5rem;
-  background-color:rgb(212, 212, 205);
-  border: 2px;
-  border-color: #188085;
-  border-radius: 10px;
-  padding-left: 10px;
-
-}
-
-summary-design{
-  font-size: 100em;
-
-}
-
-
-
-.horizontal-scroll-wrapper-squares {
- 
-  flex-direction: row; /* Arrange child elements horizontally */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent content from wrapping to the next line */
-  width: 40%;
-
-}
-
-.part-of-scroller {
-  display: inline-block; /* Display child elements inline to make them scroll horizontally */
-  margin-right: 45px; /* Add spacing between content blocks */
-}
-
-
-
-.pagethreesection{
-  
-  width:100vw;
-  height:100vh;
-  margin-top: 5rem;
-
-  padding-left: 10px;
-  padding-bottom: 150px;
-  padding-top: 30px;
-}
-
-#download-cv-btn{
-  background-color: DodgerBlue;
-  border-radius:20px;
+.contact-button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
   border: none;
-  color:beige;
-  padding: 12px 30px;
-  margin:50px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
-
-}
-#download-cv-btn:hover {
-  background-color: rgb(65, 225, 214);
+  transition: width 2s, height 4s,transform 2s;
 }
 
-
-table {
-
-  background-color: antiquewhite;
-  width: 60%;
-
-  margin: 20px;
-  border-radius:5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
-  
-
+.contact-button:hover {
+  background-color: #0056b3;
+  transform: rotate(180deg);
 }
-
-th,td{
-  padding: 12px 15px;
-}
-tr:hover {
-  border-style: inset;
-  color:var(--main-color);
-  background-color: grey;
-  
-
-}
-tr{
-  margin: 20%;
-  border-bottom: 1px solid #dddddd;
-
-}
-
-tr:nth-of-type(odd) {
-  background-color: #f3f3f3;
-
-}
-
-tr:last-of-type {
-  border-bottom: 2px solid #009879;
-}
-
-li {
-  margin: 10px 0;
-  padding: 5px; 
-  
-}
-
-
-
-.grid-container {
-
-  display: inline-grid;
-  grid-template-columns: auto auto ;
-  padding: 20px;
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .flex-container {
@@ -327,14 +203,16 @@ li {
 
 
 
-  
+ 
 
 
 
 
 
-
-
+.upmyclass{
+  display:flex;
+  flex-direction: row;
+}
 
 
 
